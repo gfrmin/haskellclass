@@ -20,3 +20,17 @@ init4 xs = take (length xs) xs
 init5 xs = reverse (tail (reverse xs))
 init6 xs = take (length xs - 1) (tail xs)
 init7 xs = drop (length xs - 1) xs
+
+second xs = head (tail xs)
+
+swap (x, y) = (y, x)
+
+pair x y = (x, y)
+
+double x = x*2
+
+palindrome xs = reverse xs == xs
+
+twice f x = f (f x)
+
+f xs = take 3 (reverse xs)
